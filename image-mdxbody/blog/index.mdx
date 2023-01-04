@@ -1,0 +1,15 @@
+---
+title: Render image in Body
+slug: render-image-in-body
+embeddedImagesLocal:
+  - typeface.jpg
+---
+
+import MDXImageBody from "../src/components/MDXImageBody";
+
+# {props.pageContext.frontmatter.title}
+My processed image: {props.pageContext.frontmatter.embeddedImagesLocal}
+
+<MDXImageBody img={props.data} index={0} alt={"A new project windows of WebStorm"}/>
+
+
